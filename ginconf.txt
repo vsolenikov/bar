@@ -1,0 +1,15 @@
+[user]
+	name = vsolenikov
+	email = solenikov.vova@yandex.ru
+	password = 794Thnk3
+[winUpdater]
+	recentlySeenVersion = 2.25.1.windows.1
+[https]
+	proxy = 127.0.0.1:8080
+[http]
+	proxy = https://github.com
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
